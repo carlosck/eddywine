@@ -1,0 +1,146 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3 class="brand-name">Eddy Wine</h3>
+        <p class="brand-tagline">Experiencias Gourmet</p>
+        <p class="brand-description">
+          Catas de vino exclusivas en Saltillo. Descubre el arte de la degustación con los mejores vinos y maridajes gourmet.
+        </p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-services">
+        <h4>Servicios</h4>
+        <ul>
+          <li>Catas Privadas</li>
+          <li>Eventos Corporativos</li>
+          <li>Maridajes Exclusivos</li>
+          <li>Experiencias Personalizadas</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; {currentYear} Eddy Wine - Experiencias Gourmet. Todos los derechos reservados.</p>
+      <p class="footer-seo">
+        Catas de vino en Saltillo | Experiencias gourmet | Maridaje profesional
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: linear-gradient(135deg, var(--color-dark) 0%, #0d0d0d 100%);
+    color: white;
+    padding: 3rem 0 1.5rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .footer-brand {
+    max-width: 400px;
+  }
+  
+  .brand-name {
+    font-size: 2rem;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .brand-tagline {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+  
+  .brand-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #aaa;
+  }
+  
+  .footer-links h4,
+  .footer-services h4 {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links ul,
+  .footer-services ul {
+    list-style: none;
+  }
+  
+  .footer-links li,
+  .footer-services li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: var(--color-secondary);
+  }
+  
+  .footer-services li {
+    color: #ccc;
+    font-size: 0.95rem;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-seo {
+    font-size: 0.85rem !important;
+    color: #666 !important;
+  }
+  
+  @media (max-width: 968px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .footer-brand {
+      max-width: 100%;
+    }
+  }
+</style>

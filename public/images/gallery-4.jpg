@@ -1,0 +1,7 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#721a33"/>
+  <circle cx="600" cy="400" r="150" fill="#D4AF37" opacity="0.3"/>
+  <text x="50%" y="48%" text-anchor="middle" font-family="Arial, sans-serif" font-size="80" fill="#D4AF37" font-weight="bold">🎉</text>
+  <text x="50%" y="58%" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#ffffff">GALERÍA 4</text>
+  <text x="50%" y="95%" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" opacity="0.6">Reemplazar con gallery-4.jpg (1200x800px)</text>
+</svg>

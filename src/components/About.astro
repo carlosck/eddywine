@@ -1,0 +1,158 @@
+---
+---
+
+<section id="nosotros" class="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2 class="section-title">Sobre Nosotros</h2>
+        <div class="title-underline"></div>
+        <p class="about-intro">
+          En <strong>Eddy Wine - Experiencias Gourmet</strong>, transformamos cada cata de vino en un viaje sensorial inolvidable.
+        </p>
+        <p>
+          Somos especialistas en catas de vino en Saltillo, ofreciendo experiencias únicas que combinan la elegancia del vino con el arte culinario. Nuestras degustaciones están cuidadosamente diseñadas para educar, deleitar y crear momentos memorables.
+        </p>
+        <p>
+          Con años de experiencia en el mundo enológico, seleccionamos los mejores vinos y creamos maridajes perfectos que elevan cada experiencia. Ya sea para eventos corporativos, celebraciones privadas o simplemente para descubrir nuevos sabores, nuestro equipo de expertos te guiará en un viaje fascinante por el mundo del vino.
+        </p>
+        
+        <div class="features">
+          <div class="feature">
+            <div class="feature-icon">🍷</div>
+            <h3>Catas Exclusivas</h3>
+            <p>Selección premium de vinos nacionales e internacionales</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">👨‍🍳</div>
+            <h3>Maridajes Gourmet</h3>
+            <p>Combinaciones perfectas de vino y gastronomía</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🎓</div>
+            <h3>Experiencia Educativa</h3>
+            <p>Aprende sobre cepas, regiones y técnicas de degustación</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-image">
+        <img 
+          src="/images/about-wine.jpg" 
+          alt="Experiencia de cata de vinos en Saltillo" 
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    padding: 6rem 0;
+    background-color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .section-title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .title-underline {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    margin-bottom: 2rem;
+  }
+  
+  .about-intro {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+  
+  .about-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .feature {
+    text-align: center;
+  }
+  
+  .feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature h3 {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 0;
+  }
+  
+  .about-image {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .about-image:hover {
+    transform: scale(1.02);
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 968px) {
+    .about {
+      padding: 4rem 0;
+    }
+    
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    
+    .about-image {
+      order: -1;
+    }
+    
+    .features {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+</style>
