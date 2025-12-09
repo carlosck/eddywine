@@ -13,7 +13,7 @@ const { title, description } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/icono_eddy.png" />
     <meta name="generator" content={Astro.generator} />
     
     <!-- SEO Meta Tags -->
@@ -22,12 +22,15 @@ const { title, description } = Astro.props;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eddywine.vercel.app" />
+    <meta property="og:image" content="https://eddywine.vercel.app/Eddy-Wine-share.png" />
     <link rel="canonical" href="https://eddywine.vercel.app" />
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Italianno:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <title>{title}</title>
   </head>
@@ -36,12 +39,15 @@ const { title, description } = Astro.props;
     
     <style is:global>
       :root {
-        --color-primary: #8B1538;
-        --color-secondary: #D4AF37;
+       /*  --color-primary: #8B1538; */
+        --color-secondary: #D4AF37; 
+        --color-primary: #69051a;
+        /* --color-secondary: #545454; */
         --color-dark: #1a1a1a;
         --color-light: #f8f5f0;
         --color-text: #333333;
-        --font-heading: 'Playfair Display', serif;
+        /* --font-heading: 'Playfair Display', serif; */
+        --font-heading: 'Italianno', cursive;
         --font-body: 'Raleway', sans-serif;
       }
       
@@ -64,7 +70,8 @@ const { title, description } = Astro.props;
       
       h1, h2, h3, h4, h5, h6 {
         font-family: var(--font-heading);
-        font-weight: 700;
+        /* font-weight: 700; */
+        font-weight: 400;
       }
       
       img {
@@ -76,6 +83,12 @@ const { title, description } = Astro.props;
       a {
         text-decoration: none;
         color: inherit;
+      }
+      .section-title {
+        font-size: clamp(2.5rem, 7vw, 7.5rem);
+        color: var(--color-primary);
+        margin-bottom: 1rem;
+        text-align: center;
       }
     </style>
   </body>
