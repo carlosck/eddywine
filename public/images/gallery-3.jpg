@@ -1,7 +1,0 @@
-<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="800" fill="#D4AF37"/>
-  <circle cx="600" cy="400" r="150" fill="#8B1538" opacity="0.3"/>
-  <text x="50%" y="48%" text-anchor="middle" font-family="Arial, sans-serif" font-size="80" fill="#8B1538" font-weight="bold">👥</text>
-  <text x="50%" y="58%" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#1a1a1a">GALERÍA 3</text>
-  <text x="50%" y="95%" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#1a1a1a" opacity="0.6">Reemplazar con gallery-3.jpg (1200x800px)</text>
-</svg>
